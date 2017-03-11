@@ -67,7 +67,7 @@ public class MainController {
 			"", ".",
 			"", ".",
 			"MyActor.png"};
-	private PropertiesHundler prop = new PropertiesHundler("options", KEYS, INITIAL_VALUES);
+	private PropertiesHundler prop = new PropertiesHundler("options");
 
 	// **************************************************
 	// ファイル

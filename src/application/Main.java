@@ -26,7 +26,7 @@ public class Main extends Application {
 
 	private static final String[] KEYS = {"x", "y", "width", "height"};
 	private static final String[] INITIAL_VALUES = {"90", "26", "1280", "880"};
-	private PropertiesHundler prop = new PropertiesHundler("window_options", KEYS, INITIAL_VALUES);
+	private PropertiesHundler prop = new PropertiesHundler("window_options");
 
 	@Override
 	public void start(Stage primaryStage) {
