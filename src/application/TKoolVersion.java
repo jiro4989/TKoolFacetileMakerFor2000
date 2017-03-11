@@ -1,7 +1,8 @@
 package application;
 
 public enum TKoolVersion {
-	MV(144), VXACE(96);
+  //MV(144), VXACE(96);
+	MV(48), VXACE(96);
 	
 	private TKoolVersion(int aWidth) {
 		width = aWidth;

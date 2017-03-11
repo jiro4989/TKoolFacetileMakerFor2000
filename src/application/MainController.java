@@ -109,6 +109,14 @@ public class MainController {
 	@FXML private MenuItem insertMenuItem6;
 	@FXML private MenuItem insertMenuItem7;
 	@FXML private MenuItem insertMenuItem8;
+	@FXML private MenuItem insertMenuItem9;
+	@FXML private MenuItem insertMenuItem10;
+	@FXML private MenuItem insertMenuItem11;
+	@FXML private MenuItem insertMenuItem12;
+	@FXML private MenuItem insertMenuItem13;
+	@FXML private MenuItem insertMenuItem14;
+	@FXML private MenuItem insertMenuItem15;
+	@FXML private MenuItem insertMenuItem16;
 
 	// **************************************************
 	// ツクールバージョン
@@ -173,6 +181,14 @@ public class MainController {
 		insertMenuItem6.setOnAction(e -> fileListHBoxController.insertImages(5));
 		insertMenuItem7.setOnAction(e -> fileListHBoxController.insertImages(6));
 		insertMenuItem8.setOnAction(e -> fileListHBoxController.insertImages(7));
+		insertMenuItem9.setOnAction(e -> fileListHBoxController.insertImages(8));
+		insertMenuItem10.setOnAction(e -> fileListHBoxController.insertImages(9));
+		insertMenuItem11.setOnAction(e -> fileListHBoxController.insertImages(10));
+		insertMenuItem12.setOnAction(e -> fileListHBoxController.insertImages(11));
+		insertMenuItem13.setOnAction(e -> fileListHBoxController.insertImages(12));
+		insertMenuItem14.setOnAction(e -> fileListHBoxController.insertImages(13));
+		insertMenuItem15.setOnAction(e -> fileListHBoxController.insertImages(14));
+		insertMenuItem16.setOnAction(e -> fileListHBoxController.insertImages(15));
 
 		versionInfoItem.setOnAction(e -> openVersionWindow());
 

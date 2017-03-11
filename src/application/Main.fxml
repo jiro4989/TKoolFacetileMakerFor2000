@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.collections.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.input.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="877.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MainController">
+<BorderPane prefHeight="877.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
   <center>
     <BorderPane prefHeight="847.0" prefWidth="808.0">
       <bottom>
@@ -43,67 +45,67 @@
       <menus>
         <Menu mnemonicParsing="false" text="ファイル">
           <items>
-            <MenuItem mnemonicParsing="false" text="開く" fx:id="openMenuItem">
+            <MenuItem fx:id="openMenuItem" mnemonicParsing="false" text="開く">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="保存する" fx:id="saveMenuItem">
+            <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="保存する">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="別名で保存する" fx:id="saveAsMenuItem">
+            <MenuItem fx:id="saveAsMenuItem" mnemonicParsing="false" text="別名で保存する">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="ナンバリングで保存する" fx:id="numberingSaveMenuItem" />
-            <MenuItem mnemonicParsing="false" text="別名を指定してナンバリングで保存する" fx:id="numberingSaveAsMenuItem" />
+            <MenuItem fx:id="numberingSaveMenuItem" mnemonicParsing="false" text="ナンバリングで保存する" />
+            <MenuItem fx:id="numberingSaveAsMenuItem" mnemonicParsing="false" text="別名を指定してナンバリングで保存する" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="設定" fx:id="optionsMenuItem" />
+            <MenuItem fx:id="optionsMenuItem" mnemonicParsing="false" text="設定" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="終了" fx:id="closeMenuItem" />
+            <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="終了" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="ファイルリスト">
           <items>
-            <MenuItem mnemonicParsing="false" text="一括挿入" fx:id="insertMenuItem" />
-            <MenuItem mnemonicParsing="false" text="クリア" fx:id="clearMenuItem" />
-            <MenuItem mnemonicParsing="false" text="リスト削除" fx:id="listDeleteMenuItem" />
-            <MenuItem mnemonicParsing="false" text="リストクリア" fx:id="listClearMenuItem" />
+            <MenuItem fx:id="insertMenuItem" mnemonicParsing="false" text="一括挿入" />
+            <MenuItem fx:id="clearMenuItem" mnemonicParsing="false" text="クリア" />
+            <MenuItem fx:id="listDeleteMenuItem" mnemonicParsing="false" text="リスト削除" />
+            <MenuItem fx:id="listClearMenuItem" mnemonicParsing="false" text="リストクリア" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="画像ビューワ">
           <items>
-            <MenuItem mnemonicParsing="false" text="上に移動" fx:id="upMenuItem">
+            <MenuItem fx:id="upMenuItem" mnemonicParsing="false" text="上に移動">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="W" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="左に移動" fx:id="leftMenuItem">
+            <MenuItem fx:id="leftMenuItem" mnemonicParsing="false" text="左に移動">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="A" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="下に移動" fx:id="downMenuItem">
+            <MenuItem fx:id="downMenuItem" mnemonicParsing="false" text="下に移動">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="S" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="右に移動" fx:id="rightMenuItem">
+            <MenuItem fx:id="rightMenuItem" mnemonicParsing="false" text="右に移動">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="D" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="縮小" fx:id="zoomOutMenuItem">
+            <MenuItem fx:id="zoomOutMenuItem" mnemonicParsing="false" text="縮小">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="Q" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="拡大" fx:id="zoomInMenuItem">
+            <MenuItem fx:id="zoomInMenuItem" mnemonicParsing="false" text="拡大">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="E" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
@@ -112,61 +114,72 @@
         </Menu>
         <Menu mnemonicParsing="false" text="出力画像プレビュー">
           <items>
-            <MenuItem mnemonicParsing="false" text="1番パネルから一括挿入" fx:id="insertMenuItem1">
+            <MenuItem fx:id="insertMenuItem1" mnemonicParsing="false" text="1番パネルから一括挿入">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="DIGIT1" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="2番パネルから一括挿入" fx:id="insertMenuItem2">
+            <MenuItem fx:id="insertMenuItem2" mnemonicParsing="false" text="2番パネルから一括挿入">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="DIGIT2" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="3番パネルから一括挿入" fx:id="insertMenuItem3">
+            <MenuItem fx:id="insertMenuItem3" mnemonicParsing="false" text="3番パネルから一括挿入">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="DIGIT3" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="4番パネルから一括挿入" fx:id="insertMenuItem4">
+            <MenuItem fx:id="insertMenuItem4" mnemonicParsing="false" text="4番パネルから一括挿入">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="DIGIT4" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="5番パネルから一括挿入" fx:id="insertMenuItem5">
+            <MenuItem fx:id="insertMenuItem5" mnemonicParsing="false" text="5番パネルから一括挿入">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="DIGIT5" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="6番パネルから一括挿入" fx:id="insertMenuItem6">
+            <MenuItem fx:id="insertMenuItem6" mnemonicParsing="false" text="6番パネルから一括挿入">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="DIGIT6" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="7番パネルから一括挿入" fx:id="insertMenuItem7">
+            <MenuItem fx:id="insertMenuItem7" mnemonicParsing="false" text="7番パネルから一括挿入">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="DIGIT7" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="8番パネルから一括挿入" fx:id="insertMenuItem8">
+
+            <MenuItem fx:id="insertMenuItem8" mnemonicParsing="false" text="8番パネルから一括挿入">
               <accelerator>
                 <KeyCodeCombination alt="UP" code="DIGIT8" control="ANY" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
             </MenuItem>
+
+            <MenuItem fx:id="insertMenuItem9" mnemonicParsing="false" text="9番パネルから一括挿入"/>
+            <MenuItem fx:id="insertMenuItem10" mnemonicParsing="false" text="10番パネルから一括挿入"/>
+            <MenuItem fx:id="insertMenuItem11" mnemonicParsing="false" text="11番パネルから一括挿入"/>
+            <MenuItem fx:id="insertMenuItem12" mnemonicParsing="false" text="12番パネルから一括挿入"/>
+            <MenuItem fx:id="insertMenuItem13" mnemonicParsing="false" text="13番パネルから一括挿入"/>
+            <MenuItem fx:id="insertMenuItem14" mnemonicParsing="false" text="14番パネルから一括挿入"/>
+            <MenuItem fx:id="insertMenuItem15" mnemonicParsing="false" text="15番パネルから一括挿入"/>
+            <MenuItem fx:id="insertMenuItem16" mnemonicParsing="false" text="16番パネルから一括挿入"/>
+
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="ツクール">
+        <Menu disable="true" mnemonicParsing="false" text="ツクール" visible="false">
           <items>
-            <RadioMenuItem disable="false" mnemonicParsing="false" selected="true" text="ＭＶ" fx:id="mvRadioMenuItem">
+            <RadioMenuItem fx:id="mvRadioMenuItem" disable="false" mnemonicParsing="false" selected="true" text="ＭＶ">
               <toggleGroup>
                 <ToggleGroup fx:id="group" />
               </toggleGroup>
             </RadioMenuItem>
-            <RadioMenuItem mnemonicParsing="false" text="ＶＸＡＣＥ" toggleGroup="$group" fx:id="vxaceRadioMenuItem" />
+            <RadioMenuItem fx:id="vxaceRadioMenuItem" mnemonicParsing="false" text="ＶＸＡＣＥ" toggleGroup="$group" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="ヘルプ">
           <items>
-            <MenuItem mnemonicParsing="false" text="バージョン情報" fx:id="versionInfoItem" />
+            <MenuItem fx:id="versionInfoItem" mnemonicParsing="false" text="バージョン情報" />
           </items>
         </Menu>
       </menus>
