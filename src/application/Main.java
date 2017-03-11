@@ -19,7 +19,7 @@ import jiro.lib.util.PropertiesHundler;
  *
  */
 public class Main extends Application {
-	public static final String TITLE = "TKoolFacetileMaker ver2.0";
+	public static final String TITLE = "TKoolFacetileMakerFor2000 ver1.0.0";
 	private MainController controller;
 	private BorderPane root;
 	private Stage stage;

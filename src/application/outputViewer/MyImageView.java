@@ -67,7 +67,7 @@ public class MyImageView extends ImageView{
 	 * @return
 	 */
 	public static BufferedImage makeTKoolFacetileImage(List<MyImageView> list, int width) {
-		BufferedImage faceTileImage = new BufferedImage(width * 4, width * 2, BufferedImage.TYPE_INT_ARGB_PRE);
+		BufferedImage faceTileImage = new BufferedImage(width * 4, width * 4, BufferedImage.TYPE_INT_ARGB_PRE);
 		Graphics2D g = (Graphics2D) faceTileImage.getGraphics();
 		g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
 
