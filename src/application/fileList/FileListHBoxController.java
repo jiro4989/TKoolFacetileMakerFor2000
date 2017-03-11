@@ -61,13 +61,13 @@ public class FileListHBoxController {
 			ObservableList<Integer> fileIndices = fileListView.getSelectionModel().getSelectedIndices();
 
 			int max = fileIndices.size();
-			IntStream.range(min, Math.min(max+min, 8))
+			IntStream.range(min, Math.min(max+min, 16))
 				.forEach(i -> {
 					int index = fileIndices.get(i-min);
 					fileListView.getSelectionModel().select(index);
 					changeSelection();
 					String filePath = filePathList.get(index);
-					int column = 3 < i ? i - 4 : i;
+					int column = i % 4;
 					int row = i / 4;
 					mainController.setTrimmingImage(filePath, column, row);
 				});

@@ -67,7 +67,7 @@ public class OutputViewerAnchorPaneController {
   private void initialize() {
     Arrays.stream(buttons)
       .forEach(b -> {
-        b.setPrefSize(144, 144);
+        b.setPrefSize(48, 48);
         b.setOnAction(e -> setTrimmingImage(b));
         int column = b.getColumn();
         int row = b.getRow();
