@@ -14,9 +14,6 @@ import javax.imageio.ImageIO;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-import com.sun.jimi.core.JimiException;
-import com.sun.jimi.core.util.ColorReducer;
-
 /**
  * トリミングする際に利用される
  * x,y座標、拡大率とグリッドペイン上の行列番号、
@@ -87,36 +84,7 @@ public class MyImageView extends ImageView{
       });
     g.dispose();
 
-    BufferedImage reducedImage = createQuantizedImage(faceTileImage, 256);
-
-    return reducedImage;
-  }
-
-  private static BufferedImage createQuantizedImage(BufferedImage bImage, int maxColor) {
-
-    try {
-
-      // 減色
-      ColorReducer reducer = new ColorReducer(maxColor);
-      java.awt.Image reducedImage = reducer.getColorReducedImage(bImage);
-
-      int width = (int) reducedImage.getWidth(null);
-      int height = (int) reducedImage.getHeight(null);
-
-      // BufferedImageへ変換
-      BufferedImage newImage = new BufferedImage(width, height, BufferedImage.TYPE_3BYTE_BGR);
-      Graphics g = newImage.createGraphics();
-      g.drawImage(reducedImage, 0, 0, null);
-      g.dispose();
-
-      return newImage;
-
-    } catch (JimiException e) {
-      e.printStackTrace();
-    }
-
-    return null;
-
+    return faceTileImage;
   }
 
   /**

@@ -49,7 +49,7 @@ public class ImageViewerBorderPaneController {
 		axisComboBox.setItems(axisItems);
 		zoomRateComboBox.setItems(zoomRateItems);
 		axisComboBox.getSelectionModel().select(1);
-		zoomRateComboBox.getSelectionModel().select(1);
+		zoomRateComboBox.getSelectionModel().select(0);
 	}
 
 	public void setMainController(MainController aMainController) {
