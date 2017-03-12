@@ -87,7 +87,7 @@ public class MyImageView extends ImageView{
       });
     g.dispose();
 
-    BufferedImage reducedImage = createQuantizedImage(faceTileImage, 24);
+    BufferedImage reducedImage = createQuantizedImage(faceTileImage, 256);
 
     return reducedImage;
   }
